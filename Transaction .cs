@@ -18,5 +18,14 @@ namespace PersonalFinanceTracker_1
 
         public string? Category{get; set;}
 
+        public Transaction(Guid id, DateTime date, string? description, decimal amount, string? category)
+        {
+            id = ID;
+            date = Date;
+            description = Description;
+            amount = Amount;
+            category = Category;
+        }
+
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sRgo6Qo1q8m15Uj7BESnnPl7vLMS9QZudNzO9/F/I9eEP/WP576irCqiINZqwj3eNxCRVCsNelYXoz/d0IcXCg==",
+  "dgSpecHash": "fUn2R3ZOVcBybWIKUvDe0KBIi+ajNXzdxktguvcIcb9bv8+Ryth23lxqmXNBKNATdzQPWU9FGIb6IuHaadlGPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Predator\\Desktop\\myprogram\\PersonalFinanceTracker\\PersonalFinanceTracker-1\\PersonalFinanceTracker-1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Predator\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
