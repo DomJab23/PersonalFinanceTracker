@@ -7,8 +7,5 @@ namespace PersonalFinanceTracker_1
 {
     public interface IFinanceStorage 
     {
-        public void Load();
-
-        public void Save();
     }
 }

@@ -12,19 +12,19 @@ namespace PersonalFinanceTracker_1
 
         public void Add()
         {
-            string path = Path;
-            if(File.Exists(path))
-            {
-                using(StreamWriter sw = File.CreateText(path))
-                {
-                    sw.WriteLine(File.);
-                }
-            }
-            else
-            {
-                Exists();
-            }
-            File.AppendText(path);
+            List < Transaction > transactions = new List<Transaction>{
+                new(
+                id: Guid.NewGuid(),
+                date: DateTime.Parse("2024-02-26"),
+                description: "Shop",
+                amount: 120M,
+                category: "Groceries"
+                )
+            };
+            
+          string jsonString = JsonSerializer.Serialize(transactions);
+          Console.WriteLine(jsonString);
+          File.WriteAllText("Transaction.json",jsonString);
         }
         public void View()
         {
@@ -35,14 +35,6 @@ namespace PersonalFinanceTracker_1
 
         }
         public string Path = "Transaction.json";
-
-        public bool Exists()
-        {
-            string path = Path;
-            File.Create(path);
-            return true;
-        }
-
 
     }
 }

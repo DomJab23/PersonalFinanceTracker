@@ -8,7 +8,7 @@ namespace PersonalFinanceTracker_1
 {
     public class Transaction 
     {
-        public Guid ID{get; set;} = Guid.NewGuid();
+        public Guid ID {get; set;} = Guid.NewGuid();
 
         public DateTime Date{get; set;}
 
@@ -20,11 +20,11 @@ namespace PersonalFinanceTracker_1
 
         public Transaction(Guid id, DateTime date, string? description, decimal amount, string? category)
         {
-            id = ID;
-            date = Date;
-            description = Description;
-            amount = Amount;
-            category = Category;
+            ID = id;
+            Date = date;
+            Description = description;
+            Amount = amount;    
+            Category = category;  
         }
 
     }

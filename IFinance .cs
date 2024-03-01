@@ -12,7 +12,6 @@ namespace PersonalFinanceTracker_1
         public void View();
 
         public void Categorize();
-
         
     }
 }
